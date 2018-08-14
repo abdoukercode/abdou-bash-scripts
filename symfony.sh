@@ -7,7 +7,9 @@ read projectName
 echo "Creating ....🤫😆 "
 echo "Meditate ... while we working 🧘‍♂️"
 composer create-project symfony/skeleton $projectName
-cd  `pwd`"/$projectName"
+cd `pwd`"/$projectName"
+cp ${HOME}/Makefile Makefile && cp ${HOME}/docker-compose.yml docker-compose.yml
+
 composer require web-server && composer require twig && composer require maker && composer require var-dumper && composer require annotations
 echo " hey you're done, congrats 👍 🏅 "
 
